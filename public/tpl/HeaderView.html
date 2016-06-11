@@ -1,0 +1,132 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+            <a class="brand home-menu" href="">Eatz</a>
+
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="browse-menu"><a href="#dishes"><i class="icon-edit icon-white"></i> Browse Dish</a></li>
+
+                    <li class="add-menu"><a href="#dishes/add"><i class="icon-edit icon-white"></i> Add Dish</a></li>
+                </ul>
+
+                <ul class="nav pull-right">
+
+                    <li class="about-menu"><a href="#about">About</a></li>
+
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+				<div align="center"><br>
+				<li class="nav-header">Sort Order</li>
+				<input type="radio"  value="name" id="sort" class="sort" name="sort">Name<br>
+				<input type="radio"  value="venue" id="sort" class="sort" name="sort">Venue<hr>
+				</div>
+                 	   </ul>
+                    </li>
+             
+		      <li class="divider-vertical"></li>
+
+           <li class="dropdown" id="signupdrop">
+                  <a class="dropdown-toggle" id="register" data-toggle="dropdown">
+				<strong class="caret"></strong> Sign Up</a>
+                  <div id="signup_form" class="dropdown-menu" >
+
+                    <!-- Signup form, could alternatively use separate template -->
+		    <form accept-charset="UTF-8">
+			    <div class="control-group">
+			        <div class="controls">
+			    	    <input id="signup_username" type="text"
+					name="username" required
+					title="Username is required"
+					autofocus placeholder="Username" size="30"/>
+			            <span class="help-inline"></span>
+			        </div>
+			    </div>
+			
+			    <div class="control-group">
+			        <div class="controls">
+			    	    <input id="email" style="margin-bottom: 0px;" type="email"
+					name="email" required title="Email address is required"
+					    placeholder="Email Address" size="30" />
+			            <span class="help-inline"></span>
+			        </div>
+			    </div>
+			
+			    <div class="control-group">
+			        <div class="controls">
+			    	    <input id="signup_password" style="margin-bottom: 0px;" type="password"
+					name="password" required title="Password must contain at least 8 characters, including UPPER/lower-case letters and digits"
+					placeholder="Password" size="30" />
+			            <span class="help-inline"></span>
+			        </div>
+			    </div>
+			
+			    <div class="control-group">
+			        <div class="controls">
+			    	    <input id="signup_password2" style="margin-bottom: 0px;" type="password"
+					name="password2" required title="Password is required"
+					placeholder="Re-entered Password" size="30" />
+			            <span class="help-inline"></span>
+			        </div>
+			    </div>
+			
+			    <div class="form-actions">
+			      <a id="signup" class="btn btn-primary signup">Sign Up</a>
+			    </div>
+			  </form>  <!-- Signup form -->
+			</div>  <!-- dropdown menu -->
+		    </li>  <!-- dropdown menu -->
+			
+                <li class="dropdown" id="logindrop">
+                  <a class="dropdown-toggle" id="greet"
+			data-toggle="dropdown">Sign In<strong class="caret"></strong></a>
+                  <div class="dropdown-menu">
+
+                    <!-- Signin form -->
+                    <form id="login_form" accept-charset="UTF-8">
+			    <div class="control-group">
+			        <div class="controls">
+                                <input id="username" class="logintext"
+					type="text" name="username"
+					required title="Username is required"
+					autofocus placeholder="Username" size="30"/>
+			            <span class="help-inline"></span>
+			        </div>
+			    </div>
+			
+			    <div class="control-group">
+			        <div class="controls">
+                                <input id="password" class="logintext" 
+					type="password" name="password"
+					placeholder="Password" size="30" />
+			            <span class="help-inline"></span>
+			        </div>
+			    </div>
+
+                            <input id="remember" class="logintext"
+					type="checkbox" name="remember" value="1" />
+                            <label class="logintext string optional"
+					for="user_remember_me">Remember me</label>
+
+                        <div id="logoutUser"></div>
+                        <div class="form-actions">
+                            <a href="#" class="btn btn-primary login">Sign In</a>
+                            <a href="#" style="display:none"
+					class="btn btn-primary logout">Sign Out</a>
+                        </div>
+
+                    </form>  <!-- Signin form -->
+
+                  </div>  <!-- dropdown-menu -->
+                </li>  <!-- dropdown logindrop -->
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

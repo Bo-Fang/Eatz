@@ -1,0 +1,37 @@
+a.plain:link
+{ color: #333; text-decoration: none }
+a.plain:active
+{ color: #333; text-decoration: none }
+a.plain:visited
+{ color: #333; text-decoration: none }
+a.plain:hover
+{ color: #333; text-decoration: none }
+
+.status-bar {
+    height: 60px;
+}
+
+.about-icon {
+    float: left;
+    margin-right: 12px;
+}
+
+.home {
+    text-align: center; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+
+}
+.color {
+    background-color: AntiqueWhite ;
+}
+
+body {
+     padding-top: 60px; 
+     }
+#map-canvas {
+	 height: 240px; margin: 0; padding: 0;
+}
